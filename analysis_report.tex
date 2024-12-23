@@ -1,0 +1,121 @@
+\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+\usepackage{graphicx}%
+%
+\usepackage[headheight=20pt, top=2cm]{geometry}%
+\title{Analysis report for the "gag" gene in 6 supposedly alike sequences}%
+\author{Luis Jimenez}%
+\date{\today}%
+%
+\begin{document}%
+\normalsize%
+\maketitle%
+\section{Introduction}%
+\label{sec:Introduction}%
+The following analysis is made by calculating the guanine{-}cytosine percentage of a specific gene in several viral sequences and comparing them to hopefully observe any similarities. The Spearman test for correlations was also made between some sequences. It is know that viruses are classified in accordance to their characteristics , such as capside type, DNA chain type, infective capacity, etc. In this case, the gag gene in retrovirus is key in the replication cycle, starting at the formation of new virions until its release and maturation. It codifies for the structural proteins needed for assembly and keeping the integrity of the viral particle. The analyzed sequences extracted from GeneBank are the following: AB097871.1, AB052867.1, KY574515.1, LC735413.1, LC312715.1, DQ093792.1.
+
+%
+\section{Results}%
+\label{sec:Results}%
+\subsection{Histogram of \% GC Content}%
+\label{subsec:HistogramofGCContent}%
+
+
+\begin{figure}[h!]%
+\centering%
+\includegraphics[width=0.8\textwidth]{histogram_gc_content.jpg}%
+\caption{Distribution of \% GC content in the sequences analyzed by fragments at a time.}%
+\end{figure}
+
+%
+\subsection{Density of \% GC Content and \% GC Content for the randomized sequences}%
+\label{subsec:DensityofGCContentandGCContentfortherandomizedsequences}%
+
+
+\begin{figure}[!htbp]%
+\centering%
+\includegraphics[width=1\textwidth]{density_gc.jpg}%
+\caption{Density of \% GC content in the sequences analyzed by fragments at a time.}%
+\end{figure}
+
+%
+\subsection{Lineplots of \% GC Content by position in the sequence}%
+\label{subsec:LineplotsofGCContentbypositioninthesequence}%
+
+
+\begin{figure}[!htbp]%
+\centering%
+\includegraphics[width=1\textwidth]{lineplot_gc.jpg}%
+\caption{Distribution of \% GC content in the sequences analyzed by fragments at a time.}%
+\end{figure}
+
+%
+\subsection{Violinplots for the distribution of \% GC Content by sequence and quartiles}%
+\label{subsec:ViolinplotsforthedistributionofGCContentbysequenceandquartiles}%
+
+
+\begin{figure}[!htbp]%
+\centering%
+\includegraphics[width=1\textwidth]{violinplot_gc_quartiles.jpg}%
+\caption{Distribution of \% GC content by GenBank Code and quartiles.}%
+\end{figure}
+
+%
+\subsection{Scatterplot of \% GC Content by position and GenBank Code with regression lines}%
+\label{subsec:ScatterplotofGCContentbypositionandGenBankCodewithregressionlines}%
+
+
+\begin{figure}[!htbp]%
+\centering%
+\includegraphics[width=0.8\textwidth]{scatterplot_gc.jpg}%
+\caption{Dispersion and regression lines for \% GC Content by position}%
+\end{figure}
+
+%
+\subsection{Boxplots for \% GC Content by quartiles}%
+\label{subsec:BoxplotsforGCContentbyquartiles}%
+
+
+\begin{figure}[h!]%
+\centering%
+\includegraphics[width=1\textwidth]{boxplot_gc_random.jpg}%
+\caption{Distribution of \% GC Content and Random GC Content by Quartiles}%
+\end{figure}
+
+%
+\subsection{Heatmap for \% GC Content shows similarities}%
+\label{subsec:HeatmapforGCContentshowssimilarities}%
+
+
+\begin{figure}[h!]%
+\centering%
+\includegraphics[width=0.8\textwidth]{heatmap_gc.jpg}%
+\caption{Comparison of \% GC Content and GC Content Random}%
+\end{figure}
+
+%
+\subsection{Bar and line plots for \% GC Content and Random GC Content for whole sequences}%
+\label{subsec:BarandlineplotsforGCContentandRandomGCContentforwholesequences}%
+
+
+\begin{figure}[h!]%
+\centering%
+\includegraphics[width=0.8\textwidth]{barplot_comparison_gc.jpg}%
+\caption{Comparison of \% GC Content and GC Content Random {-} Barplot}%
+\end{figure}
+
+%
+
+
+\begin{figure}[h!]%
+\centering%
+\includegraphics[width=0.8\textwidth]{lineplot_comparison_gc.jpg}%
+\caption{Comparison of \% GC Content and GC Content Random {-} Lineplot}%
+\end{figure}
+
+%
+\end{document}
