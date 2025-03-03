@@ -21,11 +21,17 @@ This is the repository created for the second project of the subject Programming
  8) gene_name, the exact gene name as in the sequence; for example: [gene=gag]
 
 ### How it should look:
-####  python .\retrovirus_analysis_plotter.py  .\sequence.txt .\sequence (1).txt .\sequence (2).txt .\sequence (3).txt .\sequence (4).txt .\sequence (5).txt 6 [gene=gag]
+    python .\retrovirus_analysis_plotter.py  .\sequence.txt .\sequence (1).txt .\sequence (2).txt .\sequence (3).txt .\sequence (4).txt .\sequence (5).txt 6 [gene=gag]
 
-#### From line 131-140 there is a commented section that can be used for local running on the text editor or IDLE, where the information can be entered manually.
+#### From line 131-140 there is a commented section that can be used for local running on the text editor or IDE, where the information can be entered manually.
 
 ### Also, the graphics must be personalized based on the average length of the sequences entered. Specifically, in the lines: 251, 295, 308
+
+## Explanation for getting pylatex and the compiler running:
+1) First of all, install pylatex package from your dedicated Python Integrated Development Environment (IDE)
+2) Install the LaTeX compiler independently from the source you prefer, an option would be: https://miktex.org/download ![image](https://github.com/user-attachments/assets/61b30e7e-f73d-4aa9-9aed-88eb4292ad13)
+3) Install strawberry in order for your compiler to run: https://strawberryperl.com ![image](https://github.com/user-attachments/assets/def9e094-e50f-4cd6-b31a-31e35212205c)
+4) It's going to throw some errors at first, but you just have to allow the compiler to download the complimentary packages, it does it automatically when you authorize. 
 
 ## Results: 
  1) The output from the code in the terminal is:
